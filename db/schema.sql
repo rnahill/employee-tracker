@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS db_name
+CREATE DATABASE db_name
+
+USE db_name
+
+CREATE TABLE table_name (
+    id INT AUTO_INCREMENT PRIMARY KEY NOY NULL,
+    name VARCHAR(30)
+);
+
