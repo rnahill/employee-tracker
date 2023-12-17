@@ -19,7 +19,7 @@ VALUES
 ("CEO", 150000, 5),
 ("Human Resources Manager", 70000, 6),
 ("Accountant", 100000, 7),
-("Accounting Manager", 120000, 8);
+("Accounting Manager", 120000, 7);
 
 -- Inserting values into the 'employee' table
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
@@ -32,7 +32,3 @@ VALUES
 ("Julia", "Crooks", 6, NULL),
 ("Robert", "Jones", 7, 8),
 ("Lily", "Heintz", 8, NULL);
-
-USE company_db;
-
-SHOW TABLES;
