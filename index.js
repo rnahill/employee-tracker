@@ -4,19 +4,9 @@ const { table } = require('table');
 
 const mysql = require('mysql2/promise');
 
-let db = null;
+const db = require("./connection.js");
 
 const init = async () => {
-
-db = await mysql.createConnection(
-    {
-      host: 'localhost',
-      user: 'root',
-      password: 'neatdude',
-      database: 'db_name' //
-    },
-  );
-  console.log(`Connected to the database_name database.`)
 
     // use inquirer
 
