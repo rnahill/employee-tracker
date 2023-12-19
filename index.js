@@ -4,7 +4,7 @@ const { table } = require('table');
 
 const mysql = require('mysql2/promise');
 
-const db = require("./connection.js");
+const db = require("./routes/connection.js");
 
 const init = async () => {
 
