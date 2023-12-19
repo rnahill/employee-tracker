@@ -4,7 +4,6 @@ VALUES
 ("Production"),
 ("Editorial"),
 ("Publicity"),
-("Marketing"),
 ("Administration"),
 ("Human Resources"),
 ("Accounting");
@@ -15,20 +14,17 @@ VALUES
 ("Typesetter", 50000, 1),
 ("Copy Editor", 50000, 2),
 ("Publicist", 60000, 3),
-("Marketing Manager", 90000, 4),
-("CEO", 150000, 5),
-("Human Resources Manager", 70000, 6),
-("Accountant", 100000, 7),
-("Accounting Manager", 120000, 7);
+("CEO", 150000, 4),
+("Human Resources", 70000, 5),
+("Accountant", 100000, 6);
+
 
 -- Inserting values into the 'employee' table
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
-("John", "Doe", 1, NULL),
-("Jane", "Doe", 2, NULL),
-("Jason", "Williams", 3, 4),
-("Shannon", "Marie", 4, NULL),
-("Grace", "Brown", 5, NULL),
-("Julia", "Crooks", 6, NULL),
-("Robert", "Jones", 7, 8),
-("Lily", "Heintz", 8, NULL);
+("Jane", "Doe", 1, 4),
+("Shannon", "Willow", 2, 4),
+("Grace", "Brown", 3, 4),
+("Julia", "Crooks", 4, NULL),
+("Robert", "Jones", 5, 4),
+("Lily", "Heintz", 6, 4);
