@@ -1,10 +1,11 @@
-const inquirer = require('inquirer');
 
 const { table } = require('table');
 
 const mysql = require('mysql2/promise');
 
 const db = require("./routes/connection.js");
+
+const userChoice = require("./routes/userPrompt.js");
 
 const init = async () => {
 
